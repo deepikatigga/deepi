@@ -1,0 +1,138 @@
+<html>
+<head>
+	<title>web page</title>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+	<p><a href="#c1">jump to facebook</a></p>
+	<address style="background-image:url('cupoftea.jpg');">
+	House no.-21<br>
+	Mission road,jhingo,rajpur.<br>	District-Balrampur<br>Chhattisgarh</address>
+	<h1 style="color: blue;">Hello deepika!</h1>
+	<p id="p01">Lucifer loves jesus</p>
+	<p class="dee">Deepika loves her family.</p>
+	<p style="color: red; font-size: 70px;">Good morning.... have a nice day!</p>
+	<a href="https://www.w3schools.com" style="border: 2px solid tomato;"><cite style="color: rgb(150,78,56);">w3schools</cite></a><br>
+	<hr>
+	<a href="https://www.facebook.com/" style="border: 2px solid black;"><cite id="c1">facebook</cite></a><br>
+	<p style="font-family: verdena; font-size: 50px; text-align:center;background-color: black;color:white;"><q>HELLO LUCIFER! WELCOME TO 21ST CENTURY</q></p><br>
+	<img src="wallpaper.jpeg" width="1000" height="600">
+	<br>
+	<a href="https://www.facebook.com/" style="border: 2px solid black;">
+		<img src="smiley.png" style="width: 150px; height: 40px; float: right;"></a>
+	<p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
+	<img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+	<map name="workmap">
+  	<area shape="rect" coords="34,44,270,350" alt="Computer" href="laptop.html">
+  	<area shape="circle" coords="337,300,44" alt="Cup of coffee" href="cupoftea.html">
+  	<table style="width: 100px;">
+  		<caption style="color: red;">DETAILS</caption>
+  		<tr>
+  			<th colspan="5" style="color: blue;">INFORMATION</th>
+  		</tr>
+  		<tr>
+  			<th>FIRST NAME</th>
+  			<th>LAST NAME</th>
+  			<th>ROLL NUMBER</th>
+  			<th colspan="2">TELEPHONE</th>
+  		</tr>
+  		<tr>
+  			<td>DEEPIKA</td>
+  			<td>TIGGA</td>
+  			<td>52</td>
+  			<td>9131515534</td>
+  			<td>7587002892</td>
+  		</tr>
+  		<tr>
+  			<td>DEEPIKA</td>
+  			<td>TIGGA</td>
+  			<td>52</td>
+  			<td>9131515534</td>
+  			<td>7587002892</td>
+  		</tr>
+  		<tr>
+  			<td>DEEPIKA</td>
+  			<td>TIGGA</td>
+  			<td>52</td>
+  			<td>9131515534</td>
+  			<td>7587002892</td>
+  		</tr>
+  		<tr>
+  			<td>DEEPIKA</td>
+  			<td>TIGGA</td>
+  			<td>52</td>
+  			<td>9131515534</td>
+  			<td>7587002892</td>
+  		</tr>
+  	</table>
+  	<ul style="list-style-type:none;">
+  		<li>DEEPIKA</li>
+  		<li>ERIC</li>
+  		<li>AKKI</li>
+  	</ul>
+  	<ol type="a">
+  		<li>DEEPIKA</li>
+  		<li>ERIC</li>
+  		<li>AKKI</li>
+  	</ol>
+</map>
+<ul id="pqr">
+	<li><button type="button" onclick="getElementById('home').innerHTML='This is your home page'">HOME</button></li>
+	<li><button type="button" onclick="getElementById('about').innerHTML='This is your about us page'">ABOUT US</button></li>
+	<li><button type="button" onclick="getElementById('contact').innerHTML='This is your contact us page'">CONTACT US</button></li>
+</ul>
+<p id="home"></p>
+<p id="about"></p>
+<p id="contact"></p>
+<div style="background-color:black;color: white; padding: 5px;margin: 20px;">
+	<h1>LUCIFER KINGDOM</h1>
+	<p>This is a world full of lucifer thoughts and jesus is the superior power of all kingdom... he has came to remove devils,,, from this beautiful world.</p>
+</div>
+<h1 id='demo'>HELLO WORLD!</h1>
+<button onclick="newfun()" style="float:right;">magic</button>
+<script type="text/javascript">
+	function newfun(){
+		document.getElementById('demo').innerHTML='HELLO BOOM';
+		document.getElementById('demo').style.fontSize="80px";
+		document.getElementById('demo').style.backgroundColor="red";
+		document.getElementById('demo').style.color="white";
+
+	}
+</script>
+<iframe src="table1.html" style="width: 350px;height: 150px;"></iframe><br>
+<button type="button" onclick="newfun1()" style="float:left;">
+Click me to display Date and Time.</button>
+<script type="text/javascript">
+	function newfun1() {
+		document.getElementById('dem').innerHTML = Date();
+	}
+</script>
+<br>
+<p id="dem"></p>
+<img src="light_bulb_off.jpg" id="myimage" style="width: 200px;height: 200px;">
+<p>
+	<button type="button" onclick="light(1)">light on</button>
+	<button type="button" onclick="light(0)">light off</button>
+</p>
+<script>
+	function light(sw){
+		var pic;
+		if(sw==0)
+		{
+			pic="light_bulb_off.jpg"
+		}
+		else{
+			pic="light_bulb_on.jpg"
+		}
+		document.getElementById('myimage').src=pic;
+	}
+</script>
+<div onmouseover="this.style.backgroundColor='blue'">mydiv</div>
+<p id="jsob">java objects</p>
+<script type="text/javascript">
+	var car={type:"fiant",model:"4500",color:"blue"};
+	document.getElementById('jsob').innerHTML=" THIS CAR IS OF "+ car.type + " THIS CAR IS OF "+ car.model + " THIS CAR IS OF "+ car.color;
+</script>
+</body>
+</html>
